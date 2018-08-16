@@ -1,7 +1,7 @@
 #include<iostream>
 int main()
 {
-	std::cout << "Test" << "\n";
+	std::cout << (char) << std::endl;
 
-	system("Pause");
+	return 0;
 }
