@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1-HelloAIE", "1-HelloAIE\1-
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TicTacToeAssesment", "TicTacToeAssesment\TicTacToeAssesment.vcxproj", "{C4D6D176-2F2C-4B9B-8A12-09F397BF96AC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3-loops", "3-loops\3-loops.vcxproj", "{1379E173-D615-40AB-A424-D254F0420987}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{C4D6D176-2F2C-4B9B-8A12-09F397BF96AC}.Release|x64.Build.0 = Release|x64
 		{C4D6D176-2F2C-4B9B-8A12-09F397BF96AC}.Release|x86.ActiveCfg = Release|Win32
 		{C4D6D176-2F2C-4B9B-8A12-09F397BF96AC}.Release|x86.Build.0 = Release|Win32
+		{1379E173-D615-40AB-A424-D254F0420987}.Debug|x64.ActiveCfg = Debug|x64
+		{1379E173-D615-40AB-A424-D254F0420987}.Debug|x64.Build.0 = Debug|x64
+		{1379E173-D615-40AB-A424-D254F0420987}.Debug|x86.ActiveCfg = Debug|Win32
+		{1379E173-D615-40AB-A424-D254F0420987}.Debug|x86.Build.0 = Debug|Win32
+		{1379E173-D615-40AB-A424-D254F0420987}.Release|x64.ActiveCfg = Release|x64
+		{1379E173-D615-40AB-A424-D254F0420987}.Release|x64.Build.0 = Release|x64
+		{1379E173-D615-40AB-A424-D254F0420987}.Release|x86.ActiveCfg = Release|Win32
+		{1379E173-D615-40AB-A424-D254F0420987}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
