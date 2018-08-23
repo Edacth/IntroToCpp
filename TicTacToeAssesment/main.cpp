@@ -1,16 +1,5 @@
-#include<iostream>
-void printBoard(int i);
-void clearScreen();
-
-//Declare global variables
-char blank = (char)254;
-char x = 'X';
-char o = 'O';
-char whosTurn = x;
-char spaces[3][3] = { { blank, blank, blank },
-					{ blank, blank, blank },
-					{ blank, blank, blank } };
-
+#include <iostream>
+#include "tictactoe.h"
 
 int main()
 {
@@ -22,7 +11,7 @@ int main()
 	bool showColumnMessage = true;
 	bool boardFull = false;
 
-	while (boardFull == false)
+	while (boardFull == false && checkWin() == false)
 	{
 		//Prompt the user for their input
 
@@ -101,10 +90,14 @@ int main()
 
 			
 		}
-
+		
 	}
-
-	if (boardFull == true)
+	if (checkWin())
+	{
+		clearScreen();
+		printBoard(6);
+	}
+	else if (boardFull == true)
 	{
 		clearScreen();
 		printBoard(6);
@@ -113,52 +106,3 @@ int main()
 	return 0;
 }
 
-void printBoard(int i)
-{
-	std::cout << "----------------------" << std::endl;
-	std::cout << "  1 2 3" << std::endl;
-	
-	for (int i = 0; i < 3; i++)
-	{
-		std::cout << (char)(i + 65) << ' ';
-		for (int j = 0; j < 3; j++)
-		{
-			std::cout << spaces[i][j] << ' ';
-		}
-
-		std::cout << std::endl;
-	}
-	std::cout << "----------------------" << std::endl;
-	switch (i)
-	{
-	case 1:
-		std::cout << "It is " << whosTurn << "'s turn. Please enter your column of choice. (eg. A)" << std::endl;
-		break;
-	case 2:
-		std::cout << "It is " << whosTurn << "'s turn. Please enter your row of choice. (eg. 2)" << std::endl;
-		break;
-	case 3:
-		std::cout << "That's not recognized input. Please try again." << std::endl;
-		std::cout << "It is " << whosTurn << "'s turn. Please enter your column of choice. (eg. A)" << std::endl;
-		break;
-	case 4:
-		std::cout << "That's not recognized input. Please try again." << std::endl;
-		std::cout << "It is " << whosTurn << "'s turn. Please enter your row of choice. (eg. 2)" << std::endl;
-		break;
-	case 5:
-		std::cout << "That space is taken. Please try again." << std::endl;
-		std::cout << "It is " << whosTurn << "'s turn. Please enter your column of choice. (eg. A)" << std::endl;
-		break;
-	case 6:
-		std::cout << "The board is full!" << std::endl;		break;
-	}
-}
-
-void clearScreen()
-{
-	for (int i = 0; i <= 30; i++)
-	{
-		std::cout << std::endl;
-
-	}
-}
