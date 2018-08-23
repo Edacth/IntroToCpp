@@ -47,7 +47,7 @@ void printBoard(int i)
 		std::cout << "It is " << whosTurn << "'s turn. Please enter your column of choice. (eg. A)" << std::endl;
 		break;
 	case 6:
-		std::cout << "A player has won!" << std::endl;		break;
+		std::cout << "The " << whosTurn << " player has won!" << std::endl;		break;
 	case 7:
 		std::cout << "The board is full!" << std::endl;		break;
 	}
@@ -101,5 +101,17 @@ bool checkWin()
 		}
 	}
 	
+	if (spaces[1][1] != blank)
+	{
+		if (spaces[0][0] == spaces[1][1] && spaces[1][1] == spaces[2][2])
+		{
+			isWin = true;
+		}
+
+		if (spaces[0][2] == spaces[1][1] && spaces[1][1] == spaces[2][0])
+		{
+			isWin = true;
+		}
+	}
 	return isWin;
 }

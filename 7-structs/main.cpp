@@ -15,16 +15,18 @@ int main()
 
 	//printPerson(jon);
 	
-	/*
+	
 	piggybank myBank = { 1, 1, 1, 1, 1, 1, 1 };
-	myBank = deposit(myBank, 1, 0, 0, 0, 0, 0, 0);
+	deposit(myBank, 1, 0, 0, 0, 0, 0, 0);
 	std::cout << calcPiggybankTotal(myBank);
-	*/
+	
 
+	/*
 	circle circle1 = { {-4, 5}, 2 };
 	circle circle2 = { { 10, 0 }, 100 };
 
 	std::cout << findCollision(circle1, circle2);
+	*/
 	return 0;
 }
 

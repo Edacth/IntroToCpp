@@ -55,19 +55,25 @@ int main()
 			row--;
 		}
 
-
+		
 		
 
 		if (spaces[columnNum][row] == blank)
 		{
 			spaces[columnNum][row] = whosTurn;
-			switch (whosTurn)
+			if (checkWin())
 			{
-			case 'X':
-				whosTurn = o; break;
-			case 'O':
-				whosTurn = x; break;
-
+				break;
+			}
+			else
+			{
+				switch (whosTurn)
+				{
+				case 'X':
+					whosTurn = o; break;
+				case 'O':
+					whosTurn = x; break;
+				}
 			}
 		}
 		else
@@ -100,9 +106,9 @@ int main()
 	else if (boardFull == true)
 	{
 		clearScreen();
-		printBoard(6);
+		printBoard(7);
 	}
-	
+	system("pause");
 	return 0;
 }
 
