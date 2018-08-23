@@ -43,3 +43,5 @@ int clamp(int min, int max, int number)
 	number = Min(max, number);
 	return number;
 }
+
+
