@@ -29,27 +29,20 @@ void printBoard(int i)
 	switch (i)
 	{
 	case 1:
-		std::cout << "It is " << whosTurn << "'s turn. Please enter your column of choice. (eg. A)" << std::endl;
+		std::cout << "It is " << whosTurn << "'s turn. Please enter your space of choice. (eg. A2)" << std::endl;
 		break;
 	case 2:
-		std::cout << "It is " << whosTurn << "'s turn. Please enter your row of choice. (eg. 2)" << std::endl;
+		std::cout << "That's not recognized input. Please try again." << std::endl;
+		std::cout << "It is " << whosTurn << "'s turn. Please enter your space of choice. (eg. A2)" << std::endl;
 		break;
 	case 3:
-		std::cout << "That's not recognized input. Please try again." << std::endl;
-		std::cout << "It is " << whosTurn << "'s turn. Please enter your column of choice. (eg. A)" << std::endl;
+		std::cout << "That space is taken. Please try again." << std::endl;
+		std::cout << "It is " << whosTurn << "'s turn. Please enter your space of choice. (eg. A2)" << std::endl;
 		break;
 	case 4:
-		std::cout << "That's not recognized input. Please try again." << std::endl;
-		std::cout << "It is " << whosTurn << "'s turn. Please enter your row of choice. (eg. 2)" << std::endl;
-		break;
+		std::cout << "The '" << whosTurn << "' player has won!" << std::endl;		break;
 	case 5:
-		std::cout << "That space is taken. Please try again." << std::endl;
-		std::cout << "It is " << whosTurn << "'s turn. Please enter your column of choice. (eg. A)" << std::endl;
-		break;
-	case 6:
-		std::cout << "The " << whosTurn << " player has won!" << std::endl;		break;
-	case 7:
-		std::cout << "The board is full!" << std::endl;		break;
+		std::cout << "The board is full. It's a tie!" << std::endl;		break;
 	}
 }
 

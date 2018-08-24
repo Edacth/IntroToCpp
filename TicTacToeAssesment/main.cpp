@@ -23,40 +23,25 @@ int main()
 		}
 		showColumnMessage = true;
 		
+		//Get the input
 		std::cin >> columnChar;
 		columnNum = (int)(toupper(columnChar));
 		columnNum -= 65;
-		//Validate the input as an int
-		while ( (!std::cin) || (!((int)columnNum >= 0 && (int)columnNum <= 2)) )
+		std::cin >> row;
+		row--;
+		//Validate the input
+		while ((!std::cin) || (!((int)columnNum >= 0 && (int)columnNum <= 2)) || (!(row >= 0 && row <= 2)) )
 		{
 			std::cin.clear();
 			std::cin.ignore(100, '\n');
 			clearScreen();
-			printBoard(3);
+			printBoard(2);
 			std::cin >> columnChar;
 			columnNum = (int)(toupper(columnChar));
 			columnNum -= 65;
-		}
-
-
-		//Row
-		clearScreen();
-		printBoard(2);
-		std::cin >> row;
-		row--;
-		//Validate the input as an int
-		while (!std::cin || (!(row >= 0 && row <= 2)))
-		{
-			std::cin.clear();
-			std::cin.ignore(100, '\n');
-			clearScreen();
-			printBoard(4);
 			std::cin >> row;
 			row--;
 		}
-
-		
-		
 
 		if (spaces[columnNum][row] == blank)
 		{
@@ -79,7 +64,7 @@ int main()
 		else
 		{
 			clearScreen();
-			printBoard(5);
+			printBoard(3);
 			showColumnMessage = false;
 		}
 
@@ -101,12 +86,12 @@ int main()
 	if (checkWin())
 	{
 		clearScreen();
-		printBoard(6);
+		printBoard(4);
 	}
 	else if (boardFull == true)
 	{
 		clearScreen();
-		printBoard(7);
+		printBoard(5);
 	}
 	system("pause");
 	return 0;
