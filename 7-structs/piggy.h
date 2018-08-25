@@ -24,5 +24,5 @@ float calcPiggybankCoins(piggybank piggy);
 float calcPiggybankTotal(piggybank piggy);
 
 //Withdrals
-piggybank deposit(piggybank myBank, int oneDollarAddition, int twoDollarAddition,
+piggybank deposit(piggybank &myBank, int oneDollarAddition, int twoDollarAddition,
 	int fiveDollarAddition, int quarterAddition, int dimeAddition, int nickelAddition, int pennyAddition);

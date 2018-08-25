@@ -1,10 +1,15 @@
 #include <iostream>
 
-void addReturns()
+bool detectCheat(int min, int max)
 {
-	for (int i = 0; i <= 3; i++)
+	int difference = max - min;
+	if (difference <= 1)
 	{
-		std::cout << std::endl;
-
+		std::cout << "YOU FILTHY CHEAT" << std::endl;
+		return true;
+	}
+	else
+	{
+		return false;
 	}
 }

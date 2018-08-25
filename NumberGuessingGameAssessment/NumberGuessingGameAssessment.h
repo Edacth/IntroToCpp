@@ -1,3 +1,3 @@
 #pragma once
 
-void addReturns();
+bool detectCheat(int min, int max);

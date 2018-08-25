@@ -6,6 +6,7 @@ int main()
 {
 	int guess;
 	float guessFloat;
+	int guessCount = 0;
 	int min = 1;
 	int max = 100;
 	int difference;
@@ -24,6 +25,7 @@ int main()
 		difference = max - min;
 		guess = max - (difference / 2);
 		guessFloat = (float)max - ((float)difference / 2.0f);
+		guessCount++;
 
 		//Display the guess and prompt input 
 		validInput = false;
@@ -31,7 +33,9 @@ int main()
 		{
 			std::cin.clear();
 			std::cin.ignore(100, '\n');
-			std::cout << "My guess is: " << guess << "  " << guessFloat << "  " << min << "  " << max << "  " << difference << std::endl
+			//std::cout << "My guess is: " << guess << "  " << guessFloat << "  " << min << "  " << max << "  " << difference << std::endl
+			//	<< "Is my guess high (H), low (L), or spot on equal (E)" << std::endl;
+			std::cout << "My guess is: " << guess << std::endl
 				<< "Is my guess high (H), low (L), or spot on equal (E)" << std::endl;
 			std::cin >> playerInput;
 			playerInput = toupper(playerInput);
@@ -54,22 +58,17 @@ int main()
 				std::cout << "I don't recocnize that input. Please try again." << std::endl;
 			}
 		}
-		
-
-		
-
 
 		//Detect if there is no more space and call the player a cheater
-		difference = max - min;
-		if (difference <= 1)
+		if (guessCorrect == false)
 		{
-			std::cout << "YOU FILTHY CHEAT" << std::endl;
-			guessCorrect = true;
+			guessCorrect = detectCheat(min, max);
 		}
+		
 	}
 
 	//Display the end state message
-	std::cout << "Thank you for playing with me " << std::endl;
+	std::cout << "Thank you for playing with me! It took me " << guessCount << " guess(es)." << std::endl;
 	system("pause");
 	return 0;
 }
