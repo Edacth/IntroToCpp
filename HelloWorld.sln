@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7-structs", "7-structs\7-st
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NumberGuessingGameAssessment", "NumberGuessingGameAssessment\NumberGuessingGameAssessment.vcxproj", "{5D2EE046-68BE-425A-A3CD-7D9C99E4F39B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Review-1", "Review-1\Review-1.vcxproj", "{7E578102-7092-4180-8350-E93DC3C74A69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -101,6 +103,14 @@ Global
 		{5D2EE046-68BE-425A-A3CD-7D9C99E4F39B}.Release|x64.Build.0 = Release|x64
 		{5D2EE046-68BE-425A-A3CD-7D9C99E4F39B}.Release|x86.ActiveCfg = Release|Win32
 		{5D2EE046-68BE-425A-A3CD-7D9C99E4F39B}.Release|x86.Build.0 = Release|Win32
+		{7E578102-7092-4180-8350-E93DC3C74A69}.Debug|x64.ActiveCfg = Debug|x64
+		{7E578102-7092-4180-8350-E93DC3C74A69}.Debug|x64.Build.0 = Debug|x64
+		{7E578102-7092-4180-8350-E93DC3C74A69}.Debug|x86.ActiveCfg = Debug|Win32
+		{7E578102-7092-4180-8350-E93DC3C74A69}.Debug|x86.Build.0 = Debug|Win32
+		{7E578102-7092-4180-8350-E93DC3C74A69}.Release|x64.ActiveCfg = Release|x64
+		{7E578102-7092-4180-8350-E93DC3C74A69}.Release|x64.Build.0 = Release|x64
+		{7E578102-7092-4180-8350-E93DC3C74A69}.Release|x86.ActiveCfg = Release|Win32
+		{7E578102-7092-4180-8350-E93DC3C74A69}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
