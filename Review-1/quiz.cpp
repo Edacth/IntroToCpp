@@ -71,13 +71,13 @@ void quiz()
 		{
 			score++;
 		}
-
+		
 		//Question 2
 		std::cout << "How many sides does a circle have?" << std::endl
-			<< "A. ..." << std::endl
-			<< "B. ..." << std::endl
-			<< "C. ..." << std::endl
-			<< "D. ..." << std::endl;
+			<< "A. 1" << std::endl
+			<< "B. 2" << std::endl
+			<< "C. 3" << std::endl
+			<< "D. 4" << std::endl;
 		std::cin.clear();
 		std::cin.ignore(100, '\n');
 		std::cin >> input;
@@ -99,8 +99,6 @@ void quiz()
 			{
 				std::cin.clear();
 				std::cin.ignore(100, '\n');
-				//std::cout << "My guess is: " << guess << "  " << guessFloat << "  " << min << "  " << max << "  " << difference << std::endl
-				//	<< "Is my guess high (H), low (L), or spot on equal (E)" << std::endl;
 				std::cin >> input;
 				input = (toupper(input));
 

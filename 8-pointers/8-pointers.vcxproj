@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{B1504F57-1999-4371-B928-C07F85676572}</ProjectGuid>
-    <RootNamespace>BattleArena</RootNamespace>
+    <ProjectGuid>{11138BB3-2F0F-4710-AB64-379B8ED7F91E}</ProjectGuid>
+    <RootNamespace>My8pointers</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,11 +115,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BattleArena.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="pointers.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BattleArena.h" />
+    <ClInclude Include="pointers.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
