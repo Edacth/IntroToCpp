@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{7E578102-7092-4180-8350-E93DC3C74A69}</ProjectGuid>
-    <RootNamespace>Review1</RootNamespace>
+    <ProjectGuid>{FE5019E3-8FE3-4C33-A935-A78B75463C75}</ProjectGuid>
+    <RootNamespace>OOP</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,17 +115,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="candles.cpp" />
-    <ClCompile Include="fives.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="quiz.cpp" />
-    <ClCompile Include="rotation.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="candles.h" />
-    <ClInclude Include="fives.h" />
-    <ClInclude Include="quiz.h" />
-    <ClInclude Include="rotation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
