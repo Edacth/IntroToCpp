@@ -14,6 +14,7 @@ int main()
 	char playerInput;
 	bool guessCorrect = false;
 	bool validInput = false;
+	bool cheated = false;
 
 	//Display instructions
 	std::cout << "Please guess a number between 1 and 100 (Inclusive)" << std::endl
@@ -61,12 +62,22 @@ int main()
 		if (guessCorrect == false)
 		{
 			guessCorrect = detectCheat(min, max);
+			cheated = guessCorrect;
 		}
 		
 	}
 
 	//Display the end state message
-	std::cout << "Thank you for playing with me! It took me " << guessCount << " guess(es)." << std::endl;
-	system("pause");
+	if (cheated == true)
+	{
+		std::cout << "YOU FILTHY CHEAT!" << std::endl;
+		system("pause");
+	}
+	else
+	{
+		std::cout << "Thank you for playing with me! It took me " << guessCount << " guess(es)." << std::endl;
+		system("pause");
+	}
+	
 	return 0;
 }
