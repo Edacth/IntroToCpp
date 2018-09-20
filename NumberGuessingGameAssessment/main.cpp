@@ -4,6 +4,7 @@
 
 int main()
 {
+	//Declare variables
 	int guess;
 	float guessFloat;
 	int guessCount = 0;
@@ -17,9 +18,8 @@ int main()
 	//Display instructions
 	std::cout << "Please guess a number between 1 and 100 (Inclusive)" << std::endl
 		<< "Press enter when you've thought of one." << std::endl;
-	//system("pause");
 
-	while (guessCorrect == false)
+	while (guessCorrect == false) //Main game loop
 	{
 		//Calculate the guess
 		difference = max - min;
@@ -33,8 +33,6 @@ int main()
 		{
 			std::cin.clear();
 			std::cin.ignore(100, '\n');
-			//std::cout << "My guess is: " << guess << "  " << guessFloat << "  " << min << "  " << max << "  " << difference << std::endl
-			//	<< "Is my guess high (H), low (L), or spot on equal (E)" << std::endl;
 			std::cout << "My guess is: " << guess << std::endl
 				<< "Is my guess high (H), low (L), or spot on equal (E)" << std::endl;
 			std::cin >> playerInput;
